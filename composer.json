@@ -1,26 +1,16 @@
 {
-    "name": "php-amqplib/php-amqplib",
+    "name": "cgservices/php-amqplib",
     "replace": {
-        "videlalvaro/php-amqplib": "self.version"
+        "php-amqplib/php-amqplib": "self.version"
     },
     "type": "library",
-    "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+    "description": "Fork of php-amqplib/php-amqplib. This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
     "keywords": ["rabbitmq", "message", "queue"],
-    "homepage": "https://github.com/php-amqplib/php-amqplib/",
+    "homepage": "https://github.com/cgservices/php-amqplib/",
     "authors": [
         {
-            "name": "Alvaro Videla",
+            "name": "CG Services",
             "role": "Original Maintainer"
-        },
-        {
-            "name": "John Kelly",
-            "email": "johnmkelly86@gmail.com",
-            "role": "Maintainer"
-        },
-        {
-            "name": "Raúl Araya",
-            "email": "nubeiro@gmail.com",
-            "role": "Maintainer"
         }
     ],
     "require": {
