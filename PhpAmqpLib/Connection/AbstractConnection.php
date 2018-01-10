@@ -208,7 +208,8 @@ class AbstractConnection extends AbstractChannel
                 $this->input = new AMQPReader(null, $this->getIO());
 
                 $this->write($this->amqp_protocol_header);
-                $this->wait(array($this->waitHelper->get_wait('connection.start')),false,$this->connection_timeout);
+
+                $this->wait(array($this->waitHelper->get_wait('connection.start')), false, $this->connection_timeout);
                 $this->x_start_ok(self::$LIBRARY_PROPERTIES, $this->login_method, $this->login_response, $this->locale);
 
                 $this->wait_tune_ok = true;

@@ -422,6 +422,7 @@ abstract class AbstractChannel
     {
         if ($frameType != $expectedType) {
             $protocolClass = self::$PROTOCOL_CONSTANTS_CLASS;
+            /** @noinspection PhpUndefinedVariableInspection */
             throw new AMQPRuntimeException(sprintf(
                     'Expecting %s, received frame type %s (%s)',
                     $expectedMessage,
